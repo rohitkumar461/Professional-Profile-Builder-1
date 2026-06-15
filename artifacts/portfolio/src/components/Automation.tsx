@@ -72,7 +72,7 @@ const ACHIEVEMENT_STATS = [
   { value: 15, label: "Years Telecom Experience", icon: Activity, suffix: "+" },
   { value: 1000, label: "Optimization Activities", icon: Network, suffix: "+" },
   { value: 100, label: "Automation Solutions", icon: Code2, suffix: "+" },
-  { value: 50, label: "BI Dashboards Created", icon: LayoutDashboard, suffix: "+" },
+  { value: 20, label: "BI Dashboards Created", icon: LayoutDashboard, suffix: "+" },
 ];
 
 function AnimatedCounter({ end, suffix }: { end: number; suffix: string }) {
