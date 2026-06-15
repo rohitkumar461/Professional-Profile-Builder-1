@@ -19,7 +19,7 @@ const SKILL_CATEGORIES = [
   {
     title: "Vendor Expertise",
     icon: Database,
-    skills: ["Ericsson", "Nokia / NSN", "Huawei", "Samsung", "ZTE"],
+    skills: ["Ericsson", "Nokia / NSN", "Huawei"],
     color: "bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-900"
   },
   {
