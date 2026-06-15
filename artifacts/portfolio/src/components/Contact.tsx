@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -104,6 +104,16 @@ export default function Contact() {
                   <div>
                     <p className="text-sm font-medium text-muted-foreground">LinkedIn</p>
                     <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Connect with me</p>
+                  </div>
+                </a>
+
+                <a href="https://github.com/rohitkumar461" target="_blank" rel="noreferrer" className="flex items-center gap-4 group" data-testid="link-contact-github">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <Github className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">GitHub</p>
+                    <p className="font-semibold text-foreground group-hover:text-primary transition-colors">github.com/rohitkumar461</p>
                   </div>
                 </a>
               </CardContent>

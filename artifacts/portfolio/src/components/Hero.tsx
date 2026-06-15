@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Download, ArrowRight, Activity, Globe, Zap, Network } from "lucide-react";
+import { Mail, Linkedin, Download, ArrowRight, Activity, Globe, Zap, Network, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import rohitPic from "@assets/RohitPic_1781539709999.jpg";
@@ -120,6 +120,11 @@ export default function Hero() {
                 <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full bg-secondary/5 hover:bg-secondary/10" asChild>
                   <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                     <Linkedin className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full bg-secondary/5 hover:bg-secondary/10" asChild>
+                  <a href="https://github.com/rohitkumar461" target="_blank" rel="noreferrer" aria-label="GitHub" data-testid="link-hero-github">
+                    <Github className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full bg-secondary/5 hover:bg-secondary/10" asChild>
