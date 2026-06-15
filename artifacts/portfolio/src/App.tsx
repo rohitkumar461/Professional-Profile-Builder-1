@@ -12,6 +12,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import Expertise from "@/components/Expertise";
+import Automation from "@/components/Automation";
 import Certifications from "@/components/Certifications";
 import WhyHireMe from "@/components/WhyHireMe";
 import Contact from "@/components/Contact";
@@ -49,6 +50,7 @@ function Portfolio() {
         <Skills />
         <ExperienceTimeline />
         <Expertise />
+        <Automation />
         <Certifications />
         <WhyHireMe />
         <Contact />
