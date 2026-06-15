@@ -23,7 +23,7 @@ export default function WhyHireMe() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">Why Partner With Me?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">Why Hire Me?</h2>
           <p className="text-lg text-muted-foreground">
             A unique combination of deep RF engineering, automation development, BI analytics, and AI — positioning me as a Telecom + Technology professional for 2026 and beyond.
           </p>
