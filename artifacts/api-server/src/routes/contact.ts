@@ -20,8 +20,9 @@ router.post("/contact", async (req, res) => {
 
   const { name, email, company, message } = parsed.data;
 
-  const gmailUser = process.env.GMAIL_USER || "rohit.461@gmail.com";
-  const gmailPass = process.env.GMAIL_APP_PASSWORD;
+  const gmailUser = process.env.GMAIL_USER || "inbox.rohitkumar@gmail.com";
+  const gmailPass = process.env.GMAIL_APP_PASSWORD?.replace(/\s/g, "");
+  const recipientEmail = "inbox.rohitkumar@gmail.com";
 
   if (!gmailPass) {
     req.log.error("GMAIL_APP_PASSWORD env var not set");
@@ -36,7 +37,7 @@ router.post("/contact", async (req, res) => {
 
   const mailOptions = {
     from: `"Portfolio Contact" <${gmailUser}>`,
-    to: gmailUser,
+    to: recipientEmail,
     replyTo: email,
     subject: `Portfolio enquiry from ${name}${company ? ` (${company})` : ""}`,
     html: `
