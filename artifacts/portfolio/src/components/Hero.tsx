@@ -112,7 +112,7 @@ export default function Hero() {
                 asChild
                 data-testid="button-hero-resume"
               >
-                <a href="#resume" onClick={(e) => { e.preventDefault(); alert("Resume PDF would open here"); }}>
+                <a href="/Rohit_Kumar_CV.docx" download="Rohit_Kumar_CV.docx">
                   <Download className="mr-2 h-5 w-5" /> Download CV
                 </a>
               </Button>
