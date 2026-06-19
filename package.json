@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "node -e \"var f=require('fs');try{f.unlinkSync('package-lock.json')}catch(e){}try{f.unlinkSync('yarn.lock')}catch(e){};if(!(process.env.npm_config_user_agent||'').startsWith('pnpm/')){console.error('Use pnpm');process.exit(1)}\"",
-    "build:vercel": "pnpm --filter @workspace/portfolio run build",
+    "build:vercel": "pnpm --filter @workspace/portfolio run build && node -e \"var f=require('fs');f.rmSync('public',{recursive:true,force:true});f.cpSync('artifacts/portfolio/dist/public','public',{recursive:true})\"",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
     "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
