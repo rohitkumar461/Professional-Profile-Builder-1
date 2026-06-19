@@ -130,7 +130,7 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <a href="https://github.com/rohitkumar461" target="_blank" rel="noreferrer" className="flex items-center gap-4 group" data-testid="link-contact-github">
+                <a href="https://github.com/rohitkumar461/rohitkumar" target="_blank" rel="noreferrer" className="flex items-center gap-4 group" data-testid="link-contact-github">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <Github className="w-5 h-5" />
                   </div>

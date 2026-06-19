@@ -123,7 +123,7 @@ export default function Hero() {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full bg-secondary/5 hover:bg-secondary/10" asChild>
-                  <a href="https://github.com/rohitkumar461" target="_blank" rel="noreferrer" aria-label="GitHub" data-testid="link-hero-github">
+                  <a href="https://github.com/rohitkumar461/rohitkumar" target="_blank" rel="noreferrer" aria-label="GitHub" data-testid="link-hero-github">
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
