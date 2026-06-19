@@ -1,6 +1,13 @@
 {
-  "framework": null,
-  "outputDirectory": "public",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
   "buildCommand": "pnpm -w run build:vercel",
   "installCommand": "pnpm install --frozen-lockfile",
   "rewrites": [
