@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "vercel-out",
+  "outputDirectory": "artifacts/portfolio/dist/public",
   "buildCommand": "pnpm -w run build:vercel",
   "installCommand": "pnpm install --frozen-lockfile",
   "framework": null,
