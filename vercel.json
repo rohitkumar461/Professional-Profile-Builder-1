@@ -2,7 +2,9 @@
   "outputDirectory": "vercel-out",
   "buildCommand": "pnpm -w run build:vercel",
   "installCommand": "pnpm install --frozen-lockfile",
+  "framework": null,
   "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

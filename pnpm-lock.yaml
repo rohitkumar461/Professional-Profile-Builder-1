@@ -68,7 +68,17 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      nodemailer:
+        specifier: ^9.0.0
+        version: 9.0.0
+      zod:
+        specifier: 3.25.76
+        version: 3.25.76
     devDependencies:
+      '@types/nodemailer':
+        specifier: ^8.0.1
+        version: 8.0.1
       '@vercel/node':
         specifier: ^5.1.14
         version: 5.8.17(rollup@4.60.3)
